@@ -9,10 +9,10 @@ class AuthorSerializer(serializers.ModelSerializer):
         model = Author
         fields = "__all__"
         read_only = ('id',)
+        lookup_field = "name"
 
 
 class BookSerializer(serializers.ModelSerializer):
-    authors = AuthorSerializer(many=True, read_only=True)
 
     class Meta:
         model = Book

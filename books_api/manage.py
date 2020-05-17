@@ -17,5 +17,9 @@ def main():
     execute_from_command_line(sys.argv)
 
 
+def test_this():
+    print('this is a test')
+
+
 if __name__ == '__main__':
     main()
