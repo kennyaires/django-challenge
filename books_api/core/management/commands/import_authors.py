@@ -27,9 +27,11 @@ class Command(BaseCommand):
                     if not author:
                         author = Author(name=rows[idx][0])
                         author.save()
-                        count+=1
+                        count += 1
 
-                self.stdout.write(self.style.SUCCESS(f'Authors table populated with {count} authors!'))
+                self.stdout.write(self.style.SUCCESS(
+                    f'Authors table populated with {count} authors!'
+                    ))
 
         except FileNotFoundError:
             self.stdout.write(self.style.ERROR('File not found!'))

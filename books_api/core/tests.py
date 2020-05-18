@@ -16,12 +16,13 @@ class PublicApiTests(TestCase):
 
     def setUp(self):
         self.client = APIClient()
-        
+
         # Creates test authors
-        Author.objects.bulk_create(
-            [Author(name="Anthony Robbins"),
+        Author.objects.bulk_create([
+            Author(name="Anthony Robbins"),
             Author(name="Napoleon Hill"),
-            Author(name="Robert Kiyosaki")])
+            Author(name="Robert Kiyosaki")
+        ])
 
     def test_retrieve_authors_list(self):
         """Test retrieving the list of authors"""
@@ -35,12 +36,15 @@ class PublicApiTests(TestCase):
 
     def test_create_and_get_book_successful(self):
         """Test creating a new book and getting info of it"""
-        payload = dict(name='Rich Dad Poor Dad', edition='5', publication_year=1999, authors=[3])
-        self.client.post(BOOKS_LIST_URL, payload)
+        payload = dict(name='Rich Dad Poor Dad', edition='5',
+                            publication_year=1999, authors=[3])
+        self.client.post(BOOKS_URL, payload)
 
         exists = Book.objects.filter(name=payload['name']).exists()
         self.assertTrue(exists)
 
-        res = self.client.get(BOOKS_LIST_URL)
-        serializer = BookSerializer(Book.objects.filter(name=payload['name']).first())
+        res = self.client.get(BOOKS_URL)
+        serializer = BookSerializer(Book.objects.filter(
+            name=payload['name'])
+            .first())
         self.assertIn(serializer.data, res.data)
