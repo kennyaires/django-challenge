@@ -15,6 +15,8 @@ Hints:
 * We appreciate simplicity, so create a good project setup that will help us in your evaluation;
 * Please make tests ... we appreciate tests <3... tests make the world better.
 
+**[Documentation available on README.md file on books_api directory](https://github.com/kennyaires/work-at-olist-challenge/blob/master/books_api/README.md)**
+
 ## How to participate
 
 1. Make a fork of this repository on Github. If you can't create a public fork of this project, make a private repository (bitbucket/gitlab/github offers free private repos) and add read permission for one of these users below:
