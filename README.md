@@ -1,4 +1,4 @@
-Webapp developed using Django for Olist Challenge.
+Webapp developed using Django for Olist Challenge. Documentation on https://github.com/kennyaires/django-challenge/tree/master/books_api
 
 ## Specification
 
