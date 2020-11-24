@@ -1,33 +1,4 @@
-# Work at Olist
-
-[Olist](https://olist.com/) is a company that offers an integration platform for sellers and marketplaces allowing them to sell their products across multiple channels.
-
-The Olist development team consists of developers who love what they do. Our agile development processes and our search for the best development practices provide a great environment for professionals who like to create quality software in good company.
-
-We are always looking for good programmers who love to improve their work. We give preference to small teams with qualified professionals over large teams with average professionals.
-
-This repository contains a problem used to evaluate candidate skills. It's important to notice that satisfactorily solving the problem is just a part of what will be evaluated. We also consider other programming disciplines like documentation, testing, commit timeline, design and coding best practices.
-
-Hints:
-
-* Carefully read the specification to understand all the problem and artifact requirements before starting, if you don't understand something tell us;
-* Check the recommendations and reference material at the end of this specification;
-* We appreciate simplicity, so create a good project setup that will help us in your evaluation;
-* Please make tests ... we appreciate tests <3... tests make the world better.
-
-**[Documentation available on README.md file on books_api directory](https://github.com/kennyaires/work-at-olist-challenge/blob/master/books_api/README.md)**
-
-## How to participate
-
-1. Make a fork of this repository on Github. If you can't create a public fork of this project, make a private repository (bitbucket/gitlab/github offers free private repos) and add read permission for one of these users below:
-    * [tech-hiring on github](https://github.com/tech-hiring);
-    * [tech-hiring on bitbucket](https://bitbucket.org/tech-hiring);
-    * [tech-hiring on gitlab](https://gitlab.com/tech-hiring).
-2. Follow the instructions of README.md (this file);
-3. Deploy your project on a hosting service (we recommend [Heroku](https://heroku.com));
-4. Apply for the position at our [career page](https://olist.gupy.io/) with:
-    * Link to the fork on Github (or bitbucket/gitlab);
-    * Link to the deployed project in a hosting service.
+Webapp developed using Django for Olist Challenge.
 
 ## Specification
 
